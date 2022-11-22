@@ -41,8 +41,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0.2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
 }
 
+.header-scroll {
+    background: #102746;
+}
 
 .header_wrapper {
     padding-top: 56px;
@@ -385,6 +391,9 @@ li {
     padding-right: 59px;
 }
 
+.tour-img:hover {
+    transform: scale(1.05);
+}
 .tour-more:hover, .tour-more:focus {
     color: #D67E35;
 }
@@ -483,4 +492,74 @@ li {
 .today-card-more:hover, .today-card-more:focus, .today-card-more:active {
     background: #F4A869;
 }
+.today-card-thumb:hover {
+    transform: scale(1.05);
+}
 /* tours-today end  */
+
+/* Videos */
+.videos {
+    width: 100%;
+    margin-bottom: 86px;
+}
+
+.wrapper-videos {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.videos-item {
+    padding-top: 56.25%;
+}
+.video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* Videos end */
+
+/* footer */
+footer {
+    background: #0E1D28;
+    padding: 199px 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-logo {
+    flex-grow: 1;
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+   flex-grow: 1;
+    justify-content: space-between;
+}
+
+.footer-menu-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-menu-link:hover, .footer-menu-link:focus, .footer-menu-link:active, .footer-menu-link:visited {
+    color: #D67E35;
+
+}
+/* footer */
+
