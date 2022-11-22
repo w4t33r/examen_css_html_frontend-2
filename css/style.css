@@ -358,6 +358,7 @@ li {
     margin-bottom: 77px;
 
 }
+
 .tour-info {
     padding-left: 47px;
 }
@@ -375,6 +376,7 @@ li {
     line-height: 24px;
     margin-bottom: 58px;
 }
+
 .tour-more {
     font-size: 16px;
     color: #102746;
@@ -386,12 +388,99 @@ li {
 .tour-more:hover, .tour-more:focus {
     color: #D67E35;
 }
+
 /* tours end */
+
+
+/* tours-today */
+
 .tours-today {
     margin-bottom: 86px;
 }
+
 .today-title {
     margin-bottom: 54px;
+
+}
+.today-card {
+    display: flex;
+    flex-direction: column;
 }
 
-/* tours-today */
+.today-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.today-card-img {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+
+.today-card-stat {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 16px 25px;
+}
+
+.today-card-title {
+    margin: 0 auto 0 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.today-card-stat_like {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    margin-right: 14px;
+    background: url("../images/today-tour/statistics_icon/like.svg") no-repeat right;
+
+}
+
+.today-card-stat_comment {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 23px;
+    background: url("../images/today-tour/statistics_icon/comment.svg") no-repeat right;
+}
+
+
+.today-card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.today-card-more {
+    margin: auto 0 0 0;
+    width: 118px;
+    text-decoration: none;
+    padding: 12px 19px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background: #D67E35;
+    border: 0;
+}
+
+.today-card-more:hover, .today-card-more:focus, .today-card-more:active {
+    background: #F4A869;
+}
+/* tours-today end  */
