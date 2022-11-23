@@ -14,15 +14,25 @@
 
 //burger
 (function () {
+    const menuLinks = document.querySelectorAll('.header_link');
     const burgerItem = document.querySelector('.burger');
-    const menu = document.querySelector('.header-nav')
-    const menuClose = document.querySelector('.header-nav-close')
+    const menu = document.querySelector('.header-nav');
+    const menuClose = document.querySelector('.header-nav-close');
     burgerItem.addEventListener('click', () =>  {
-        menu.classList.add('header-nav-active')
+        menu.classList.add('header-nav-active');
     });
     menuClose.addEventListener('click', () => {
-        menu.classList.remove('header-nav-active')
+        menu.classList.remove('header-nav-active');
     });
+
+    if(window.innerWidth <= 768) {
+        for (let i = 0; i < menuLinks.length; i += 1) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove('header-nav-active');
+            });
+        }
+    }
+
 }());
 
 (function () {
