@@ -28,11 +28,13 @@ img {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .wrapper-main {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* header */
@@ -87,6 +89,35 @@ li {
 .header_link:hover, .header_link:focus, .header_link:active {
     opacity: 0.75;
     color: orange;
+}
+
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger-line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.burger-line_first {
+    top: 0;
+
+}
+.burger-line_second {
+top: 50%;
+    transform: translateY(-50%);
+}
+.burger-line_third {
+    bottom: 0;
+
 }
 
 /* header end */
@@ -561,5 +592,67 @@ footer {
     color: #D67E35;
 
 }
-/* footer */
+/* footer  end*/
+
+
+/* Media */
+@media screen and (max-width: 767px) {
+    .header-burger {
+        display: block;
+    }
+    .header-nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: 0.2s linear;
+    }
+    .header-nav-active {
+        transform: translateX(0);
+    }
+    .header-list-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .header-list-item:last-child {
+        margin-bottom: 0;
+    }
+    .header_link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .header-nav-close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    .header-nav-close-line{
+        width: 100%;
+        display: block;
+        top: 50%;
+        height: 2px;
+        background: white;
+        position: absolute;
+    }
+    .header-nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .header-nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+
+/* Media end */
+
+
 
