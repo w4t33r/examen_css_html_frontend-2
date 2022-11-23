@@ -1,4 +1,4 @@
-// samo vizivaywaysa funktion
+
 /* header scroll */
 (function () {
     const header = document.querySelector('header');
