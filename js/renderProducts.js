@@ -10,6 +10,7 @@ async function getProducts() {
     console.log(response)
     // Парсим данные из JSON формата в JS
     const productsArray = await response.json();
+    console.log(productsArray)
     // Запускаем ф-ю рендера (отображения товаров)
     renderProducts(productsArray);
 }
