@@ -11,13 +11,33 @@ html {
     padding: 0;
 }
 
+.section-title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 253px;
+    height: 3px;
+    background-color: #0E1D28;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
 body {
     font-family: 'Lato', sans-serif;;
     font-style: normal;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.2;
-    color: #102746;
+    color: #0E1D28;
 }
 
 img {
@@ -49,7 +69,7 @@ header {
 }
 
 .header-scroll {
-    background: #102746;
+    background: #0E1D28;
 }
 
 .header_wrapper {
@@ -127,7 +147,7 @@ li {
 
 /* main start */
 .main-intro {
-    min-height: 100vh;
+    min-height: 800px;
     background: url("/Japan/examen_css_html_frontend-2/images/bg2.jpg") no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -151,41 +171,74 @@ li {
     margin-bottom: 59px;
 }
 
+.main-today-place {
+    margin-top: 150px;
+}
+
+.main-today-title {
+    margin-bottom: 54px;
+}
+
+.main-today-card {
+    display: flex;
+    flex-direction: row;
+    grid-column: span 1;
+}
+
+.main-today-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 57px;
+    row-gap: 57px;
+}
+
+.main-today-card-img {
+    position: relative;
+    margin-bottom: 45px;
+
+}
+
+.main-card-thumb {
+    border-radius: 50%;
+}
+
+
 /* main end */
 
 
 /* tours-today */
 
-.tours-today {
+.location-tour {
     margin-bottom: 86px;
 }
 
-.today-title {
-    margin-bottom: 54px;
+.location-title {
+    margin-bottom: 40px;
+    margin-top: 40px;
 
 }
 
-.today-card {
+.location-card {
     display: flex;
     flex-direction: column;
     grid-column: span 2;
 }
 
-.today-cards {
+.location-cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 57px;
     row-gap: 57px;
 }
 
-.today-card-img {
+.location-card-img {
     position: relative;
     margin-bottom: 45px;
 
 }
 
 
-.today-card-stat {
+.location-card-stat {
     display: flex;
     flex-wrap: wrap;
     align-items: self-start;
@@ -194,9 +247,13 @@ li {
     left: 0;
     justify-content: flex-start;
     padding: 16px 25px;
+    background: #0E1D28;
+    width: 100%;
+    opacity: 0.75;
 }
 
-.today-card-title {
+.location-card-title {
+
     margin: 0 auto 0 0;
     font-weight: 500;
     font-size: 18px;
@@ -205,58 +262,28 @@ li {
     padding-right: 10px;
 }
 
-.today-card-stat_like {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    padding-right: 20px;
-    margin-right: 14px;
 
-
-}
-
-.today-card-stat_comment {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    padding-right: 23px;
-
-}
-
-
-.today-card-description {
+.location-card-description {
+    overflow: hidden;
+    height: 300px;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+    padding: 10px 20px;
     margin-bottom: 31px;
+    text-align: left;
 }
 
-.today-card-more {
-    margin: auto 0 0 0;
-    width: 118px;
-    text-decoration: none;
-    padding: 12px 19px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    background: #D67E35;
-    border: 0;
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #0E1D28;
 }
 
-.today-card-thumb {
-    border-radius: 50%;
-}
 
-.today-card-more:hover, .today-card-more:focus, .today-card-more:active {
-    background: #F4A869;
-}
-
-.today-card-thumb:hover {
-
-    transform: scale(1.05);
+.location-card-description:hover {
+    overflow: auto;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
 /* tours-today end  */
@@ -308,7 +335,19 @@ footer {
 
 /* Media */
 @media screen and (max-width: 960px) {
-
+    .location-card-stat {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: self-start;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        justify-content: flex-start;
+        padding: 16px 25px;
+        background: #0E1D28;
+        width: 386px;
+        opacity: 0.75;
+    }
     /* Benefits */
     .benefits {
         margin-bottom: 75px;
@@ -333,18 +372,30 @@ footer {
 
 
     /* Benefits  end*/
-
     /* Today-tours */
-    .today-cards {
+    .location-cards {
         column-gap: 25px;
         row-gap: 55px;
     }
 
-    .today-card {
+    .main-intro {
+        padding-bottom: 10px;
+    }
+
+    .main-today-cards {
+        margin: 0 auto;
+    }
+
+    .main-today-card {
+        padding-top: 10px;
+        grid-column: span 2;
+    }
+
+    .location-card {
         grid-column: span 3;
     }
 
-    .today-card-img {
+    .location-card-img {
         margin-bottom: 25px;
     }
 
@@ -360,11 +411,12 @@ footer {
     .section-title {
         margin-bottom: 25px;
     }
-    .section-title::after{
+
+    .section-title::after {
         width: 78px;
     }
-    /* Titles end */
 
+    /* Titles end */
     /* header */
     .header_wrapper {
         padding-top: 28px;
@@ -381,7 +433,7 @@ footer {
         height: 100%;
         top: 0;
         left: 0;
-        background: #000;
+        background: #0E1D28;
         z-index: 10;
         padding: 75px;
         transform: translateX(100%);
@@ -435,7 +487,6 @@ footer {
 
     /* burger  end */
     /* header  end */
-
     /* intro */
     .main-intro {
         padding-top: 125px;
@@ -451,34 +502,39 @@ footer {
     }
 
 
-
     /* Today Tours */
-    .tours-today {
+    .location-tour {
         margin-bottom: 76px;
     }
-    .today-card {
+
+    .location-card {
         grid-column: span 6;
     }
+
     .today-card-stat {
         max-width: 386px;
     }
+
     .today-card-description {
         margin-bottom: 15px;
     }
-    /* Today Tours end */
 
+    /* Today Tours end */
     /* footer */
     .footer-logo {
         width: 100%;
         margin-bottom: 24px;
     }
+
     .footer-nav {
         width: 100%;
     }
+
     .footer-menu {
         width: 50%;
         margin-bottom: 24px;
     }
+
     /* footer end */
 }
 
