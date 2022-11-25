@@ -17,6 +17,12 @@ const handleClick = (event => {
     localStorage.setItem('id', res)
     window.location.assign('single-test.html')
     // HTTP 301 response
+    for (let x in parsedData) {
+        if (x === out) {
+            console.log('TRUES')
+            renderFound(x)
+        }
+    }
 })
 j.forEach(handle => {
     handle.addEventListener('click', handleClick)
@@ -25,36 +31,19 @@ j.forEach(handle => {
 const out = localStorage.getItem('id')
 console.log(typeof out, 'out')
 console.log('LocalStorage-out', out)
-getData(out)
-
-function showData(value) {
-    console.log('DATA::::::', value)
-}
 
 
 
-async function getData(value) {
-    const result = await fetch("js/products.json");
-    result.json().then(res =>
-        res.forEach((item) => {
-            console.log(item)
-            const keys = Object.keys(item);
-            keys.forEach(key => {
-                console.log('key foreach',key)
-                if (value === item[key]) {
-                    renderFound(item)
-                    let data = new Array(item)
-                    showData(data)
-                    localStorage.removeItem('id');
-                }
+const json = `
+  {"users":[
+  {"name":"Shyam", "login":"shyamjaiswal"},  
+  {"name":"Bob", "login":"bob32"},  
+  {"name":"Jai", "login":"jai87"}  
+]}`;
 
-
-
-            });
-        })
-    );
-
-}
+const parsedData = JSON.parse(json);
+console.log(parsedData)
+console.log(parsedData.users[1].name);
 
 const renderFound = (item) => {
     localStorage.removeItem('id');
@@ -74,8 +63,7 @@ const renderFound = (item) => {
                    
                 </div>
 
-        </div>
-    </div>            
+            </div>
    <div class="wrapper-tours tour">
 
                 <div class="tour-info">
@@ -92,7 +80,6 @@ const renderFound = (item) => {
                 <div class="tour-img tour-mobile">
                     <img src="./images/tours/${item.imgSrc}" alt=${item.alt}
                          class="tour_thumb">
-                </div>
-   </div>`;
+                </div>`;
 }
 

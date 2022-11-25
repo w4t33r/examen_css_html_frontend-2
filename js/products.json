@@ -1,21 +1,48 @@
 [
-	{
-		"id": "Fuji",
-		"title": "Sibuya",
-		"main_title": "Sibuya",
-		"main_intro_subtitle": "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door",
-		"tour_title": "Prefecture in Focus: Sibuya",
-		"tour_description": "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door",
-		"imgSrc": "temple_1-min.jpg",
-		"imgSrc_double": "temple_2-min.jpg"
-	},
-	{
-		"id": "Kyoto",
-		"title": "Sake",
-		"main_title": "Sake",
-		"main_intro_subtitle": "ffff",
-		"tour_title": "Prefecture in Focus: Sake",
-		"tour_description": "sssssssss",
-		"imgSrc": "temple_2-min.jpg"
-	}
+  {
+    "id": "Fuji",
+    "tour_title": "Mount Fuji",
+    "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+    "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+    "imgSrc": "Mount_fuji.jpg",
+    "imgSrc_second": "Mount_fuji_2.jpg",
+    "alt": "Mount-Fuji"
+  },
+  {
+    "id": "Kyoto",
+    "tour_title": "Kyoto",
+    "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+    "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+    "imgSrc": "Kyoto_2.jpg",
+    "imgSrc_second": "Kyoto.jpg",
+    "alt": "Mount-Fuji"
+  },
+  {
+    "id": "Niigata",
+    "tour_title": "Niigata",
+    "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+    "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+    "imgSrc": "Niigata.jpg",
+    "imgSrc_second": "Niigata_2.jpg",
+    "alt": "Mount-Fuji"
+  },
+  {
+    "id": "Sapporo",
+    "tour_title": "Sapporo",
+    "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+    "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+    "imgSrc": "Sapporo_2.jpg",
+    "imgSrc_second": "Sapporo.jpg",
+    "alt": "Mount-Fuji"
+  },
+  {
+    "id": "Tokyo",
+    "tour_title": "Tokyo",
+    "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+    "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+    "imgSrc": "Tokyo.jpg",
+    "imgSrc_second": "Tokyo_2.jpg",
+    "alt": "Mount-Fuji"
+  }
+
 ]
