@@ -49,7 +49,7 @@ header {
 }
 
 .header-scroll {
-    background: #102746;
+    background: #0E1D28;
 }
 
 .header_wrapper {
@@ -88,7 +88,7 @@ li {
 
 .header_link:hover, .header_link:focus, .header_link:active {
     opacity: 0.75;
-    color: orange;
+    color: #FF7400;
 }
 
 .header-burger {
@@ -128,7 +128,7 @@ li {
 /* main start */
 .main-intro {
     min-height: 100vh;
-    background: url("/Japan/examen_css_html_frontend-2/images/bg3.jpg") no-repeat center;
+    background: url("/Japan/examen_css_html_frontend-2/images/bg-main-min.png") no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
@@ -184,12 +184,12 @@ li {
     font-weight: 500;
     font-size: 22px;
     color: white;
-    background: #D67E35;
+    background: #0E1D28;
     border: 0;
 }
 
 .search-form-submit:hover, .search-form-submit:focus, .search-form-submit:active {
-    background: #F4A869;
+    background: #FF7400;
 }
 
 /* main end */
@@ -229,12 +229,19 @@ li {
 }
 
 .benefits-card {
-    margin-bottom: 112px;
+    margin: auto 0 0 0;
+    padding-bottom: 112px;
     grid-column: span 1;
+}
+
+.benefits-mouthpiece {
+    margin-bottom: 8px;
 }
 
 .benefits-card-icons {
     margin-bottom: 37px;
+    display: flex;
+    justify-content: center;
 }
 
 .benefits-card-thumb {
@@ -242,6 +249,7 @@ li {
 }
 
 .benefits-card-title {
+    text-align: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -255,7 +263,8 @@ li {
 }
 
 .benefits-card-more {
-    color: #D67E35;
+    display: flex;
+    color: #0E1D28;
     text-decoration: none;
     padding-right: 59px;
     font-size: 16px;
@@ -265,6 +274,7 @@ li {
 }
 
 .benefits-card-more:hover, .benefits-card-more:focus {
+    color: #FF7400;
     background: url("../images/benefits-card/arrow.svg") no-repeat right center;
 
 }
@@ -289,7 +299,7 @@ li {
     display: block;
     width: 253px;
     height: 3px;
-    background-color: #102746;
+    background-color: #0E1D28;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -392,6 +402,7 @@ li {
 }
 
 .wrapper-tours {
+    margin-top: 77px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 108px;
@@ -420,7 +431,7 @@ li {
 
 .tour-more {
     font-size: 16px;
-    color: #102746;
+    color: #0E1D28;
     text-decoration: none;
     background: url("../images/benefits-card/arrow.svg") no-repeat right center;
     padding-right: 59px;
@@ -431,7 +442,7 @@ li {
 }
 
 .tour-more:hover, .tour-more:focus {
-    color: #D67E35;
+    color: #FF7400;
 }
 
 /* tours end */
@@ -524,12 +535,12 @@ li {
     font-weight: 500;
     font-size: 16px;
     color: white;
-    background: #D67E35;
+    background: #0E1D28;
     border: 0;
 }
 
 .today-card-more:hover, .today-card-more:focus, .today-card-more:active {
-    background: #F4A869;
+    background: #FF7400;
 }
 
 .today-card-thumb:hover {
@@ -603,7 +614,7 @@ footer {
 }
 
 .footer-menu-link:hover, .footer-menu-link:focus, .footer-menu-link:active, .footer-menu-link:visited {
-    color: #D67E35;
+    color: #FF7400;
 
 }
 
@@ -717,7 +728,7 @@ footer {
         height: 100%;
         top: 0;
         left: 0;
-        background: #000;
+        background: #0E1D28;
         z-index: 10;
         padding: 75px;
         transform: translateX(100%);
