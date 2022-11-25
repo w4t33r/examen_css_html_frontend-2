@@ -1,0 +1,26 @@
+[
+  {
+    "Fuji": [
+      {
+        "tour_title": "Mount Fuji",
+        "tour_description": "Mount Fuji is the highest mountain in Japan. Its height is 3776 meters. It was formed as a result of volcanic activity about one hundred thousand years ago. Today, Mount Fuji and its surroundings are a popular tourist area where you can go hiking, live in nature and just relax.\nFuji is the most famous symbol of the Land of the Rising Sun. People from all over the world come here to see this incredible natural wonder. For the Japanese themselves, Fuji is one of the most revered shrines, a source of national pride and an endless source of inspiration.",
+        "tour__desc": "The spiritual connection of the Japanese with Fuji has been forged for centuries. Legend has it that the famous ascetic Hasegawa Kakugyo (1541–1646) made over a hundred ascents of the mountain. His exploits led to the formation of the Fuji-ko, a Shinto-Buddhist sect of mountain worshipers. They built shrines, erected stone monuments, and observed fasting as a token of their devotion. Such fanaticism led to the banning of the sect from the lands of the Tokugawa shogunate. Despite this, the old tradition of mountain worship is still alive in Japan. They are revered as places of great spiritual importance.",
+        "imgSrc": "Mount_fuji.jpg",
+        "imgSrc_second": "Mount_fuji_2.jpg",
+        "alt": "Mount-Fuji"
+      }
+    ]
+  },
+  {
+    "Kyoto": [
+      {
+        "tour_title": "Kyoto",
+        "tour_description": "Kyoto is figuratively called the \"city of a thousand temples\", although in fact there are more than one and a half thousand Buddhist temples and Shinto shrines and shrines. The entire territory of historical Kyoto is a UNESCO World Heritage Site, which is a unique world practice. The city is divided into several districts - Central, East, South, West and North Kyoto. Each of them houses a number of architectural structures, streets and quarters, which are important historical sights. In Central Kyoto, the Gosho Imperial Palace, the former residence of the Imperial Family of Japan, is located, which can only be entered by advance booking. Not far from it is Nijo Castle, built as the residence of the founder of the Tokugawa shogunate, Ieyasu Tokugawa in 1603, at the very beginning of the Edo era.",
+        "tour__desc": "This majestic castle, built in the “Momoyama” style, was designed to rival the scope and beauty of Gosho Palace. The Buddhist temples Nishihogenji and Higashihongenji are located in the same area. The Amidado Hall at Nishihogenji Temple is dedicated to Amida Buddha. The Higashiyama Historic District in East Kyoto recreates the ancient atmosphere of the city with its narrow picturesque streets and ancient temples. In the same area is the famous Kyoto temple Kiyomizudera - “Temple of Pure Water”. It was founded back in 780. The water in this temple, according to local belief, has healing powers. In the eastern part of the city there is another famous temple, Sanjusangendo, which is the longest wooden structure in Japan with a length of 120 meters. In the main hall is a large statue of the goddess Kannon the Merciful, another incarnation of the Buddha.  ",
+        "imgSrc": "Kyoto.jpg",
+        "imgSrc_second": "Kyoto_2.jpg",
+        "alt": "Kyoto"
+      }
+    ]
+  }
+]
