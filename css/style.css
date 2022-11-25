@@ -612,7 +612,7 @@ footer {
     color: #FFFFFF;
 }
 
-.footer-menu-link:hover, .footer-menu-link:focus, .footer-menu-link:active, .footer-menu-link:visited {
+.footer-menu-link:hover, .footer-menu-link:focus, .footer-menu-link:active {
     color: #FF7400;
 
 }
