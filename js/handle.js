@@ -28,7 +28,7 @@ console.log('LocalStorage-out', out)
 getData(out)
 
 function showData(value) {
-    console.log('DATA::::::', value)
+    console.log('DATA:', value)
 }
 
 
