@@ -139,7 +139,7 @@ li {
 /* main start */
 .main-intro {
   min-height: 100vh;
-  background: url("/Japan/examen_css_html_frontend-2/images/bg4.jpg") no-repeat center;
+  background: url("/images/bg4.jpg") no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
@@ -147,7 +147,7 @@ li {
 
 .main-intro-title {
   margin: 0 auto;
-  padding-top: 400px;
+  padding-top: 300px;
   display: flex;
   max-width: 619px;
   font-size: 100px;
@@ -159,6 +159,11 @@ li {
 /* main end */
 .benefits {
   margin-bottom: 131px;
+}
+
+.phone {
+  text-decoration: none;
+  color: #FF7400;
 }
 
 .benefits-wrap {
@@ -485,8 +490,9 @@ footer {
   .benefits {
     margin-bottom: 75px;
   }
-  .benefits-card {
+  .benefits-card, .info__wrap {
     margin-bottom: 30px;
+    grid-column: span 3;
   }
   .benefits-wrap {
     box-shadow: none;
@@ -538,7 +544,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background: #000;
+    background: #0E1D28;
     z-index: 10;
     padding: 75px;
     transform: translateX(100%);
