@@ -139,7 +139,7 @@ li {
 /* main start */
 .main-intro {
   min-height: 800px;
-  background: url("/images/bg2.jpg") no-repeat center;
+  background: url("../images/bg2.jpg") no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
