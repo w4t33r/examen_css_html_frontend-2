@@ -1,5 +1,6 @@
 const productsContainer = document.querySelector('.wrapper-main');
 const target = document.querySelectorAll(".places-card-link")
+
 const handleClick = (event => {
     const res = event.target.id
     console.log('HandleClick', res)
@@ -49,7 +50,6 @@ const renderFound = (item) => {
 
                 <div class="tour-info">
                     <h3 class="tour-title">
-                   
                        </h3>
                     <p class="tour-description">
                       ${item.tour__desc}
