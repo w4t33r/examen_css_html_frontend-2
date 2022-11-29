@@ -1,16 +1,5 @@
 const productsContainer = document.querySelector('.wrapper-main');
-// const link = document.querySelectorAll('.header_link')
-
-
-// link.forEach(createURL => {
-//     createURL.addEventListener('click', function () {
-//         const getId = parseInt(EventTarget.id)
-//         console.log(getId)
-//         getData(getId)
-//     })
-// })
-
-const j = document.querySelectorAll(".places-card-link")
+const target = document.querySelectorAll(".places-card-link")
 const handleClick = (event => {
     const res = event.target.id
     console.log('HandleClick', res)
@@ -18,42 +7,22 @@ const handleClick = (event => {
     window.location.assign('single-test.html')
     // HTTP 301 response
 })
-j.forEach(handle => {
+target.forEach(handle => {
     handle.addEventListener('click', handleClick)
 })
 
-const out = localStorage.getItem('id')
-console.log(typeof out, 'out')
-console.log('LocalStorage-out', out)
-getData(out)
-
-function showData(value) {
-    console.log('DATA:', value)
-}
-
-
+getData(localStorage.getItem('id'))
 
 async function getData(value) {
     const result = await fetch("js/products.json");
     result.json().then(res =>
-        res.forEach((item) => {
-            console.log(item)
-            const keys = Object.keys(item);
-            keys.forEach(key => {
-                console.log('key foreach',key)
-                if (value === item[key]) {
-                    renderFound(item)
-                    let data = new Array(item)
-                    showData(data)
-                    localStorage.removeItem('id');
-                }
-
-
-
-            });
-        })
-    );
-
+        res.filter((item) => {
+            if (item.id === value) {
+                renderFound(item)
+                console.log('item:id', item.id)
+                console.log('v', value)
+            }
+        }))
 }
 
 const renderFound = (item) => {
